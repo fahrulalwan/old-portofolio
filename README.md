@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/effdb343-a7c4-4ba5-a43c-1b0acc41ebb9/deploy-status)](https://app.netlify.com/sites/fahrulalwan/deploys)
+
 # Fahrulalwan
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
