@@ -13,10 +13,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    sal({
-      once: false
-    });
+    sal();
   }
-
-  // @HostListener('onscroll', this.el.)
 }
