@@ -9,9 +9,14 @@ import * as sal from 'sal.js';
 export class AppComponent implements OnInit {
   title = 'fahrulalwan';
 
+  constructor() {
+  }
+
   ngOnInit(): void {
     sal({
       once: false
     });
   }
+
+  // @HostListener('onscroll', this.el.)
 }
