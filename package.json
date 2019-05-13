@@ -19,8 +19,10 @@
     "@angular/platform-browser": "~7.2.15",
     "@angular/platform-browser-dynamic": "~7.2.15",
     "@angular/router": "~7.2.15",
+    "bulma": "^0.7.4",
     "core-js": "~2.6.5",
     "rxjs": "~6.5.2",
+    "sal.js": "^0.5.0",
     "tslib": "~1.9.3",
     "zone.js": "~0.9.1"
   },
@@ -44,5 +46,8 @@
     "ts-node": "~8.1.0",
     "tslint": "~5.16.0",
     "typescript": "~3.2.4"
+  },
+  "optionalDependencies": {
+    "node-sass": "~4.12.0"
   }
 }

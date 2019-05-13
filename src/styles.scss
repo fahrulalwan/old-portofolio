@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/sal.js/dist/sal.css';
+
+$fullhd-enabled: false;
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F5F5F5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+  &:after {
+    background: #555;
+  }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+  &:active {
+    background: #555;
+  }
+}
