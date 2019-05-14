@@ -3,6 +3,21 @@
   margin: 0.5rem;
 }
 
+.navbar {
+  &.is-transparent {
+    background-color: transparent;
+    background-image: none;
+
+    -webkit-animation: white_to_transparent 0.2s;
+    animation: white_to_transparent 0.2s;
+
+  }
+
+  -webkit-animation: transparent_to_white 0.2s;
+  animation: transparent_to_white 0.2s;
+
+
+}
 
 .header-bg {
   width: 50vw;
@@ -21,11 +36,55 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
-    transition-delay: 0.5s;
+    animation: image_blur 2s;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header-bg {
+    width: 100vw;
   }
 }
 
 .yellow-bg {
   background-image: url("../assets/images/yellow-backround.webp");
 }
+
+@-webkit-keyframes image_blur {
+  0% { -webkit-filter: blur(5px);}
+  50% { -webkit-filter: blur(2.5px);}
+  100% { -webkit-filter: blur(0px);}
+}
+
+@keyframes image_blur {
+  0% { -webkit-filter: blur(5px);}
+  50% { -webkit-filter: blur(2.5px);}
+  100% { -webkit-filter: blur(0px);}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes transparent_to_white {
+  from {background-color: transparent;}
+  to {background-color: white;}
+}
+
+@keyframes transparent_to_white {
+  from {background-color: transparent;}
+  to {background-color: white;}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes white_to_transparent {
+  from {background-color: white;}
+  to {background-color: transparent;}
+}
+
+@keyframes white_to_transparent {
+  from {background-color: white;}
+  to {background-color: transparent;}
+}
+
+
+
 

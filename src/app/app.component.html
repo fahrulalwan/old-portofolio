@@ -1,27 +1,29 @@
 <!-- header -->
-<nav class="navbar is-fixed-top" [class.is-transparent]="!transparent">
+<nav [class.is-transparent]="!isTransparent" class="navbar is-fixed-top">
 
   <!-- logo -->
   <div class="navbar-brand">
     <a class="navbar-item logo">
-      <img alt="animated logo" src="favicon.ico">
-      &nbsp;
-      <b> MFA</b>
+      <img alt="animated logo" src="favicon.ico" style="margin-right: 10px">
+      <b>Made With Angular!</b>
     </a>
+    <div class="navbar-burger" (click)="openMenuBurger($event)" [class.is-active]="!openBurger" data-sal="slide-left">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  <div class="navbar-menu ">
+  <div class="navbar-menu" [class.is-active]="!openBurger">
     <div class="navbar-end">
-      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#skills">Skills</a>
+      <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#skills">Skills</a>
       </div>
-      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item"
-                                                                            data-view="#work">Work</a></div>
-      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item"
-                                                                            data-view="#about">About</a></div>
-      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#contribute">Contribute</a>
+      <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#work">Work</a></div>
+      <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#about">About</a></div>
+      <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#contribute">Contribute</a>
       </div>
-      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#contact">Contact</a>
+      <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#contact">Contact</a>
       </div>
-      <div class="navbar-item cta is-hidden aos-animate" data-aos="fade-up">
+      <div [ngClass]="{'sal-animate is-hidden': !isTransparent}" class="navbar-item" data-sal="slide-up">
         <button class="button is-primary" data-view="#contact">
           <span>Say hello <span aria-label="emoji" role="img">👋</span></span>
         </button>
@@ -30,16 +32,13 @@
   </div>
 </nav>
 
-<!-- routes will be rendered here -->
-<router-outlet></router-outlet>
-
 <header>
   <section class="hero is-light is-fullheight" id="intro">
-    <div class="hero-body">
+    <div class="hero-body" style="z-index: 1;">
       <div class="container" data-sal="slide-up" data-sal-delay="500" data-sal-duration="750"
            data-sal-easing="ease-out-bounce">
-        <h2 class="subtitle">Hello,</h2>
-        <p class="title">
+        <h2 [class.has-text-white-ter]="whiteText" class="subtitle">Hello,</h2>
+        <p [class.has-text-white-ter]="whiteText" class="title">
           Welcome to my Page!
         </p>
       </div>

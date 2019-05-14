@@ -2,8 +2,6 @@
 @import "../node_modules/bulma/bulma";
 @import '../node_modules/sal.js/dist/sal.css';
 
-$fullhd-enabled: false;
-
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -33,49 +31,14 @@ $fullhd-enabled: false;
   url('assets/fonts/montserrat/montserrat-v13-cyrillic_cyrillic-ext_vietnamese_latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html, body {
+html {
   font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.navbar {
-  &.is-transparent {
-    background-color: transparent;
-    background-image: none;
-
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 0.2s;
-
-    /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes example {
-      from {background-color: white;}
-      to {background-color: transparent;}
-    }
-
-    /* Standard syntax */
-    @keyframes example {
-      from {background-color: white;}
-      to {background-color: transparent;}
-    }
-
-  }
-
-  -webkit-animation-name: abc; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
-  animation-name: abc;
-  animation-duration: 0.2s;
-
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes abc {
-    from {background-color: transparent;}
-    to {background-color: white;}
-  }
-
-  /* Standard syntax */
-  @keyframes abc {
-    from {background-color: transparent;}
-    to {background-color: white;}
-  }
-
+img {
+  image-rendering: smooth;
 }

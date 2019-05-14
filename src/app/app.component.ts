@@ -9,8 +9,9 @@ import { WINDOW } from './window-provider';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'fahrulalwan';
-  transparent = false;
+  isTransparent = false;
+  whiteText = false;
+  openBurger = true ;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -23,14 +24,23 @@ export class AppComponent implements OnInit {
     });
   }
 
-  @HostListener('window:scroll', [])
+  @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const num = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
     if (num > 299) {
-      this.transparent = true;
-    } else if (this.transparent && num < 20) {
-      this.transparent = false;
+      this.isTransparent = true;
+    } else if (this.isTransparent && num < 25) {
+      this.isTransparent = false;
     }
-    console.log(num);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.whiteText = event.target.innerWidth < 1280;
+  }
+
+  openMenuBurger(event: any) {
+    this.isTransparent = !this.isTransparent;
+    this.openBurger = !this.openBurger;
   }
 }
