@@ -1,37 +1,75 @@
 <!-- header -->
-<nav class="navbar is-dark">
+<nav class="navbar is-fixed-top" [class.is-transparent]="!transparent">
 
   <!-- logo -->
-  <div class="navbar-brand is-fixed-top" [class.is-transparent]="">
-    <a class="navbar-item">
-      <img src="../assets/images/developer-logo.webp" alt="animated logo" data-sal="zoom-in" data-sal-delay="500">
+  <div class="navbar-brand">
+    <a class="navbar-item logo">
+      <img alt="animated logo" src="favicon.ico">
+      &nbsp;
+      <b> MFA</b>
     </a>
+  </div>
+  <div class="navbar-menu ">
+    <div class="navbar-end">
+      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#skills">Skills</a>
+      </div>
+      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item"
+                                                                            data-view="#work">Work</a></div>
+      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item"
+                                                                            data-view="#about">About</a></div>
+      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#contribute">Contribute</a>
+      </div>
+      <div class="navbar-item aos-init aos-animate" data-aos="fade-left"><a class="navbar-item" data-view="#contact">Contact</a>
+      </div>
+      <div class="navbar-item cta is-hidden aos-animate" data-aos="fade-up">
+        <button class="button is-primary" data-view="#contact">
+          <span>Say hello <span aria-label="emoji" role="img">👋</span></span>
+        </button>
+      </div>
+    </div>
   </div>
 </nav>
 
 <!-- routes will be rendered here -->
 <router-outlet></router-outlet>
 
-<section class="hero is-light is-fullheight-with-navbar">
-  <div class="hero-body">
-    <div class="container" data-sal="slide-up" data-sal-delay="500">
-      <h2 class="subtitle">Hello,</h2>
-      <p class="title">
-        Welcome to my Page! <br>
+<header>
+  <section class="hero is-light is-fullheight" id="intro">
+    <div class="hero-body">
+      <div class="container" data-sal="slide-up" data-sal-delay="500" data-sal-duration="750"
+           data-sal-easing="ease-out-bounce">
+        <h2 class="subtitle">Hello,</h2>
+        <p class="title">
+          Welcome to my Page!
+        </p>
+      </div>
+    </div>
+    <div class="header-bg">
+      <img alt="testing image" class="header-bg__image"
+           src="../assets/images/minimalist-background-uhd-8k-wallpaper.webp">
+    </div>
+  </section>
+</header>
+
+<section class="hero is-fullheight">
+  <div class="hero-body yellow-bg">
+    <div class="container" data-sal="slide-up" data-sal-delay="500" data-sal-duration="750"
+         data-sal-easing="ease-out-bounce">
+      <h2 class="subtitle is-white">Hello,</h2>
+      <p class="title is-white">
+        Welcome to my Page!
       </p>
-      <h2 class="subtitle is-2"><i>@fahrulalwan</i></h2>
     </div>
   </div>
 </section>
 
-
 <!-- footer -->
-<!--<footer class="footer">-->
-<!--  <div class="container">-->
-<!--    <div class="content has-text-centered">-->
-<!--      <p>-->
-<!--        Made with <3 by fahrul alwan-->
-<!--      </p>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</footer>-->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Created with <3 by <a href="https://github.com/fahrulalwan"><strong>@fahrulalwan</strong></a>
+      </p>
+    </div>
+  </div>
+</footer>
