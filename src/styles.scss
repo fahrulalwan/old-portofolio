@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../node_modules/bulma/bulma";
+@import "../node_modules/bulma/sass/components/navbar";
+@import "../node_modules/bulma/sass/layout/all";
+@import "../node_modules/bulma/sass/base/minireset";
+@import "../node_modules/bulma/sass/elements/button";
+@import "../node_modules/bulma/sass/elements/container";
+@import "../node_modules/bulma/sass/elements/content";
+@import "../node_modules/bulma/sass/elements/image";
+@import "../node_modules/bulma/sass/elements/title";
+@import "../node_modules/bulma/sass/elements/tag";
 @import '../node_modules/sal.js/dist/sal.css';
 
 /* scrollbar */
