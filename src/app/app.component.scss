@@ -20,7 +20,6 @@
 }
 
 .header-bg {
-  width: 50vw;
   height: 100vh;
 
   position: absolute;
@@ -40,14 +39,8 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .header-bg {
-    width: 100vw;
-  }
-}
-
 .yellow-bg {
-  background-image: url("../assets/images/yellow-backround.webp");
+  background-image: url("../assets/images/minimalist-background-uhd-8k-wallpaper.webp");
 }
 
 @-webkit-keyframes image_blur {

@@ -7,13 +7,13 @@
       <img alt="animated logo" src="favicon.ico" style="margin-right: 10px">
       <b>Made With Angular!</b>
     </a>
-    <div class="navbar-burger" (click)="openMenuBurger($event)" [class.is-active]="!openBurger" data-sal="slide-left">
+    <div (click)="openMenuBurger($event)" [class.is-active]="!openBurger" class="navbar-burger" data-sal="slide-left">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
-  <div class="navbar-menu" [class.is-active]="!openBurger">
+  <div [class.is-active]="!openBurger" class="navbar-menu">
     <div class="navbar-end">
       <div class="navbar-item" data-sal="slide-left"><a class="navbar-item" data-view="#skills">Skills</a>
       </div>
@@ -45,6 +45,7 @@
     </div>
     <div class="header-bg">
       <img alt="testing image" class="header-bg__image"
+           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 50vw"
            src="../assets/images/minimalist-background-uhd-8k-wallpaper.webp">
     </div>
   </section>
