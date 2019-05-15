@@ -1,17 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bulma/sass/utilities/initial-variables";
-@import "~bulma/sass/utilities/mixins";
-@import "~bulma/sass/utilities/functions";
-@import "~bulma/sass/utilities/derived-variables";
-@import "~bulma/sass/utilities/controls";
-@import "~bulma/sass/components/navbar";
-@import "~bulma/sass/base/minireset";
-@import "~bulma/sass/elements/button";
-@import "~bulma/sass/elements/container";
-@import "~bulma/sass/elements/content";
-@import "~bulma/sass/elements/image";
-@import "~bulma/sass/elements/title";
-@import "~bulma/sass/elements/tag";
+@import "~bulma/bulma";
 @import '~sal.js/dist/sal.css';
 
 /* scrollbar */
@@ -49,8 +37,4 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-img {
-  image-rendering: smooth;
 }
