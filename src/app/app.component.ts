@@ -11,7 +11,7 @@ import { WINDOW } from './window-provider';
 export class AppComponent implements OnInit {
   isTransparent = false;
   whiteText = false;
-  openBurger = true ;
+  openBurger = true;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
