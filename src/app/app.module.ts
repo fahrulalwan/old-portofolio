@@ -1,9 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { WINDOW_PROVIDERS } from './window-provider';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +12,7 @@ import { WINDOW_PROVIDERS } from './window-provider';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [WINDOW_PROVIDERS],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
