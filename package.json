@@ -4,7 +4,8 @@
   "scripts": {
     "prestart": "./node_modules/.bin/tailwind build ./src/tailwind.scss -c tailwind.config.js -o ./src/styles.scss",
     "start": "sudo ng serve --port 5000 & sudo ngtw watch",
-    "build": "./node_modules/.bin/tailwind build ./src/tailwind.scss -c tailwind.config.js -o ./src/styles.scss --purge && ng build --prod",
+    "build": "ngtw build --purge && ng build --prod",
+    "netlify:build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
