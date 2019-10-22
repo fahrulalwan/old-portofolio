@@ -598,26 +598,6 @@ video {
   height: auto;
 }
 
-/* montserrat-regular - cyrillic_cyrillic-ext_vietnamese_latin-ext_latin */
-
-/* montserrat-regular - latin */
-
-@font-face {
-  font-family: "Montserrat";
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("assets/fonts/montserrat/montserrat-v14-latin-regular.woff2") format("woff2"), url("assets/fonts/montserrat/montserrat-v14-latin-regular.woff") format("woff");
-
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-html, body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .container {
   width: 100%;
 }
@@ -3625,11 +3605,11 @@ html, body {
 }
 
 .font-display {
-  font-family: Montserrat, Montserrat;
+  font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
 }
 
 .font-body {
-  font-family: Montserrat, Montserrat;
+  font-family: Sailec-Light, Helvetica, Arial, sans-serif;
 }
 
 .font-hairline {
@@ -10180,11 +10160,15 @@ html, body {
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: .75rem;
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: .875rem;
+}
+
+.text-tiny {
+  font-size: .875rem;
 }
 
 .text-base {
@@ -10217,6 +10201,118 @@ html, body {
 
 .text-6xl {
   font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+}
+
+.hover\:text-xs:hover {
+  font-size: .75rem;
+}
+
+.hover\:text-sm:hover {
+  font-size: .875rem;
+}
+
+.hover\:text-tiny:hover {
+  font-size: .875rem;
+}
+
+.hover\:text-base:hover {
+  font-size: 1rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+}
+
+.hover\:text-4xl:hover {
+  font-size: 2.25rem;
+}
+
+.hover\:text-5xl:hover {
+  font-size: 3rem;
+}
+
+.hover\:text-6xl:hover {
+  font-size: 4rem;
+}
+
+.hover\:text-7xl:hover {
+  font-size: 5rem;
+}
+
+.hover\:text-8xl:hover {
+  font-size: 6rem;
+}
+
+.focus\:text-xs:focus {
+  font-size: .75rem;
+}
+
+.focus\:text-sm:focus {
+  font-size: .875rem;
+}
+
+.focus\:text-tiny:focus {
+  font-size: .875rem;
+}
+
+.focus\:text-base:focus {
+  font-size: 1rem;
+}
+
+.focus\:text-lg:focus {
+  font-size: 1.125rem;
+}
+
+.focus\:text-xl:focus {
+  font-size: 1.25rem;
+}
+
+.focus\:text-2xl:focus {
+  font-size: 1.5rem;
+}
+
+.focus\:text-3xl:focus {
+  font-size: 1.875rem;
+}
+
+.focus\:text-4xl:focus {
+  font-size: 2.25rem;
+}
+
+.focus\:text-5xl:focus {
+  font-size: 3rem;
+}
+
+.focus\:text-6xl:focus {
+  font-size: 4rem;
+}
+
+.focus\:text-7xl:focus {
+  font-size: 5rem;
+}
+
+.focus\:text-8xl:focus {
+  font-size: 6rem;
 }
 
 .italic {
@@ -10289,12 +10385,16 @@ html, body {
   -moz-osx-font-smoothing: auto;
 }
 
+.tracking-tightest {
+  letter-spacing: -.075em;
+}
+
 .tracking-tighter {
-  letter-spacing: -0.05em;
+  letter-spacing: -.05em;
 }
 
 .tracking-tight {
-  letter-spacing: -0.025em;
+  letter-spacing: -.025em;
 }
 
 .tracking-normal {
@@ -10302,15 +10402,83 @@ html, body {
 }
 
 .tracking-wide {
-  letter-spacing: 0.025em;
+  letter-spacing: .025em;
 }
 
 .tracking-wider {
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
 }
 
 .tracking-widest {
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
+}
+
+.tracking-widestest {
+  letter-spacing: .25em;
+}
+
+.hover\:tracking-tightest:hover {
+  letter-spacing: -.075em;
+}
+
+.hover\:tracking-tighter:hover {
+  letter-spacing: -.05em;
+}
+
+.hover\:tracking-tight:hover {
+  letter-spacing: -.025em;
+}
+
+.hover\:tracking-normal:hover {
+  letter-spacing: 0;
+}
+
+.hover\:tracking-wide:hover {
+  letter-spacing: .025em;
+}
+
+.hover\:tracking-wider:hover {
+  letter-spacing: .05em;
+}
+
+.hover\:tracking-widest:hover {
+  letter-spacing: .1em;
+}
+
+.hover\:tracking-widestest:hover {
+  letter-spacing: .25em;
+}
+
+.focus\:tracking-tightest:focus {
+  letter-spacing: -.075em;
+}
+
+.focus\:tracking-tighter:focus {
+  letter-spacing: -.05em;
+}
+
+.focus\:tracking-tight:focus {
+  letter-spacing: -.025em;
+}
+
+.focus\:tracking-normal:focus {
+  letter-spacing: 0;
+}
+
+.focus\:tracking-wide:focus {
+  letter-spacing: .025em;
+}
+
+.focus\:tracking-wider:focus {
+  letter-spacing: .05em;
+}
+
+.focus\:tracking-widest:focus {
+  letter-spacing: .1em;
+}
+
+.focus\:tracking-widestest:focus {
+  letter-spacing: .25em;
 }
 
 .select-none {
@@ -10630,6 +10798,46 @@ html, body {
 
 .z-auto {
   z-index: auto;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+  url('assets/fonts/montserrat/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/fonts/montserrat/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Sailec-Medium';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Sailec Medium'), local('Sailec-Medium'),
+  url('assets/fonts/sailec/sailec-medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/fonts/sailec/sailec-medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Sailec-Light';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: local('Sailec Light'), local('Sailec-Light'),
+  url('assets/fonts/sailec/sailec-light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/fonts/sailec/sailec-light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html, body {
+  font-family: 'Sailec', 'Helvetica', 'Arial', sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -13612,11 +13820,11 @@ html, body {
   }
 
   .sm\:font-display {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
   }
 
   .sm\:font-body {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Light, Helvetica, Arial, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -20167,11 +20375,15 @@ html, body {
   }
 
   .sm\:text-xs {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   .sm\:text-sm {
-    font-size: 0.875rem;
+    font-size: .875rem;
+  }
+
+  .sm\:text-tiny {
+    font-size: .875rem;
   }
 
   .sm\:text-base {
@@ -20204,6 +20416,118 @@ html, body {
 
   .sm\:text-6xl {
     font-size: 4rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
+  }
+
+  .sm\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .sm\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .sm\:hover\:text-tiny:hover {
+    font-size: .875rem;
+  }
+
+  .sm\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .sm\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .sm\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .sm\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .sm\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .sm\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .sm\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .sm\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .sm\:hover\:text-7xl:hover {
+    font-size: 5rem;
+  }
+
+  .sm\:hover\:text-8xl:hover {
+    font-size: 6rem;
+  }
+
+  .sm\:focus\:text-xs:focus {
+    font-size: .75rem;
+  }
+
+  .sm\:focus\:text-sm:focus {
+    font-size: .875rem;
+  }
+
+  .sm\:focus\:text-tiny:focus {
+    font-size: .875rem;
+  }
+
+  .sm\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .sm\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .sm\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .sm\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .sm\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .sm\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .sm\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .sm\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
+  .sm\:focus\:text-7xl:focus {
+    font-size: 5rem;
+  }
+
+  .sm\:focus\:text-8xl:focus {
+    font-size: 6rem;
   }
 
   .sm\:italic {
@@ -20276,12 +20600,16 @@ html, body {
     -moz-osx-font-smoothing: auto;
   }
 
+  .sm\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .sm\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .sm\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .sm\:tracking-normal {
@@ -20289,15 +20617,83 @@ html, body {
   }
 
   .sm\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .sm\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .sm\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
+  }
+
+  .sm\:tracking-widestest {
+    letter-spacing: .25em;
+  }
+
+  .sm\:hover\:tracking-tightest:hover {
+    letter-spacing: -.075em;
+  }
+
+  .sm\:hover\:tracking-tighter:hover {
+    letter-spacing: -.05em;
+  }
+
+  .sm\:hover\:tracking-tight:hover {
+    letter-spacing: -.025em;
+  }
+
+  .sm\:hover\:tracking-normal:hover {
+    letter-spacing: 0;
+  }
+
+  .sm\:hover\:tracking-wide:hover {
+    letter-spacing: .025em;
+  }
+
+  .sm\:hover\:tracking-wider:hover {
+    letter-spacing: .05em;
+  }
+
+  .sm\:hover\:tracking-widest:hover {
+    letter-spacing: .1em;
+  }
+
+  .sm\:hover\:tracking-widestest:hover {
+    letter-spacing: .25em;
+  }
+
+  .sm\:focus\:tracking-tightest:focus {
+    letter-spacing: -.075em;
+  }
+
+  .sm\:focus\:tracking-tighter:focus {
+    letter-spacing: -.05em;
+  }
+
+  .sm\:focus\:tracking-tight:focus {
+    letter-spacing: -.025em;
+  }
+
+  .sm\:focus\:tracking-normal:focus {
+    letter-spacing: 0;
+  }
+
+  .sm\:focus\:tracking-wide:focus {
+    letter-spacing: .025em;
+  }
+
+  .sm\:focus\:tracking-wider:focus {
+    letter-spacing: .05em;
+  }
+
+  .sm\:focus\:tracking-widest:focus {
+    letter-spacing: .1em;
+  }
+
+  .sm\:focus\:tracking-widestest:focus {
+    letter-spacing: .25em;
   }
 
   .sm\:select-none {
@@ -23600,11 +23996,11 @@ html, body {
   }
 
   .md\:font-display {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
   }
 
   .md\:font-body {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Light, Helvetica, Arial, sans-serif;
   }
 
   .md\:font-hairline {
@@ -30155,11 +30551,15 @@ html, body {
   }
 
   .md\:text-xs {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   .md\:text-sm {
-    font-size: 0.875rem;
+    font-size: .875rem;
+  }
+
+  .md\:text-tiny {
+    font-size: .875rem;
   }
 
   .md\:text-base {
@@ -30192,6 +30592,118 @@ html, body {
 
   .md\:text-6xl {
     font-size: 4rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+  }
+
+  .md\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .md\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .md\:hover\:text-tiny:hover {
+    font-size: .875rem;
+  }
+
+  .md\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .md\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .md\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .md\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .md\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .md\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .md\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .md\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .md\:hover\:text-7xl:hover {
+    font-size: 5rem;
+  }
+
+  .md\:hover\:text-8xl:hover {
+    font-size: 6rem;
+  }
+
+  .md\:focus\:text-xs:focus {
+    font-size: .75rem;
+  }
+
+  .md\:focus\:text-sm:focus {
+    font-size: .875rem;
+  }
+
+  .md\:focus\:text-tiny:focus {
+    font-size: .875rem;
+  }
+
+  .md\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .md\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .md\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .md\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .md\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .md\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .md\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .md\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
+  .md\:focus\:text-7xl:focus {
+    font-size: 5rem;
+  }
+
+  .md\:focus\:text-8xl:focus {
+    font-size: 6rem;
   }
 
   .md\:italic {
@@ -30264,12 +30776,16 @@ html, body {
     -moz-osx-font-smoothing: auto;
   }
 
+  .md\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .md\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .md\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .md\:tracking-normal {
@@ -30277,15 +30793,83 @@ html, body {
   }
 
   .md\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .md\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .md\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
+  }
+
+  .md\:tracking-widestest {
+    letter-spacing: .25em;
+  }
+
+  .md\:hover\:tracking-tightest:hover {
+    letter-spacing: -.075em;
+  }
+
+  .md\:hover\:tracking-tighter:hover {
+    letter-spacing: -.05em;
+  }
+
+  .md\:hover\:tracking-tight:hover {
+    letter-spacing: -.025em;
+  }
+
+  .md\:hover\:tracking-normal:hover {
+    letter-spacing: 0;
+  }
+
+  .md\:hover\:tracking-wide:hover {
+    letter-spacing: .025em;
+  }
+
+  .md\:hover\:tracking-wider:hover {
+    letter-spacing: .05em;
+  }
+
+  .md\:hover\:tracking-widest:hover {
+    letter-spacing: .1em;
+  }
+
+  .md\:hover\:tracking-widestest:hover {
+    letter-spacing: .25em;
+  }
+
+  .md\:focus\:tracking-tightest:focus {
+    letter-spacing: -.075em;
+  }
+
+  .md\:focus\:tracking-tighter:focus {
+    letter-spacing: -.05em;
+  }
+
+  .md\:focus\:tracking-tight:focus {
+    letter-spacing: -.025em;
+  }
+
+  .md\:focus\:tracking-normal:focus {
+    letter-spacing: 0;
+  }
+
+  .md\:focus\:tracking-wide:focus {
+    letter-spacing: .025em;
+  }
+
+  .md\:focus\:tracking-wider:focus {
+    letter-spacing: .05em;
+  }
+
+  .md\:focus\:tracking-widest:focus {
+    letter-spacing: .1em;
+  }
+
+  .md\:focus\:tracking-widestest:focus {
+    letter-spacing: .25em;
   }
 
   .md\:select-none {
@@ -33588,11 +34172,11 @@ html, body {
   }
 
   .lg\:font-display {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
   }
 
   .lg\:font-body {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Light, Helvetica, Arial, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -40143,11 +40727,15 @@ html, body {
   }
 
   .lg\:text-xs {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   .lg\:text-sm {
-    font-size: 0.875rem;
+    font-size: .875rem;
+  }
+
+  .lg\:text-tiny {
+    font-size: .875rem;
   }
 
   .lg\:text-base {
@@ -40180,6 +40768,118 @@ html, body {
 
   .lg\:text-6xl {
     font-size: 4rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+  }
+
+  .lg\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .lg\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .lg\:hover\:text-tiny:hover {
+    font-size: .875rem;
+  }
+
+  .lg\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .lg\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .lg\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .lg\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .lg\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .lg\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .lg\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .lg\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .lg\:hover\:text-7xl:hover {
+    font-size: 5rem;
+  }
+
+  .lg\:hover\:text-8xl:hover {
+    font-size: 6rem;
+  }
+
+  .lg\:focus\:text-xs:focus {
+    font-size: .75rem;
+  }
+
+  .lg\:focus\:text-sm:focus {
+    font-size: .875rem;
+  }
+
+  .lg\:focus\:text-tiny:focus {
+    font-size: .875rem;
+  }
+
+  .lg\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .lg\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .lg\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .lg\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .lg\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .lg\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .lg\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .lg\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
+  .lg\:focus\:text-7xl:focus {
+    font-size: 5rem;
+  }
+
+  .lg\:focus\:text-8xl:focus {
+    font-size: 6rem;
   }
 
   .lg\:italic {
@@ -40252,12 +40952,16 @@ html, body {
     -moz-osx-font-smoothing: auto;
   }
 
+  .lg\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .lg\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .lg\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .lg\:tracking-normal {
@@ -40265,15 +40969,83 @@ html, body {
   }
 
   .lg\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .lg\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .lg\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
+  }
+
+  .lg\:tracking-widestest {
+    letter-spacing: .25em;
+  }
+
+  .lg\:hover\:tracking-tightest:hover {
+    letter-spacing: -.075em;
+  }
+
+  .lg\:hover\:tracking-tighter:hover {
+    letter-spacing: -.05em;
+  }
+
+  .lg\:hover\:tracking-tight:hover {
+    letter-spacing: -.025em;
+  }
+
+  .lg\:hover\:tracking-normal:hover {
+    letter-spacing: 0;
+  }
+
+  .lg\:hover\:tracking-wide:hover {
+    letter-spacing: .025em;
+  }
+
+  .lg\:hover\:tracking-wider:hover {
+    letter-spacing: .05em;
+  }
+
+  .lg\:hover\:tracking-widest:hover {
+    letter-spacing: .1em;
+  }
+
+  .lg\:hover\:tracking-widestest:hover {
+    letter-spacing: .25em;
+  }
+
+  .lg\:focus\:tracking-tightest:focus {
+    letter-spacing: -.075em;
+  }
+
+  .lg\:focus\:tracking-tighter:focus {
+    letter-spacing: -.05em;
+  }
+
+  .lg\:focus\:tracking-tight:focus {
+    letter-spacing: -.025em;
+  }
+
+  .lg\:focus\:tracking-normal:focus {
+    letter-spacing: 0;
+  }
+
+  .lg\:focus\:tracking-wide:focus {
+    letter-spacing: .025em;
+  }
+
+  .lg\:focus\:tracking-wider:focus {
+    letter-spacing: .05em;
+  }
+
+  .lg\:focus\:tracking-widest:focus {
+    letter-spacing: .1em;
+  }
+
+  .lg\:focus\:tracking-widestest:focus {
+    letter-spacing: .25em;
   }
 
   .lg\:select-none {
@@ -43576,11 +44348,11 @@ html, body {
   }
 
   .xl\:font-display {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
   }
 
   .xl\:font-body {
-    font-family: Montserrat, Montserrat;
+    font-family: Sailec-Light, Helvetica, Arial, sans-serif;
   }
 
   .xl\:font-hairline {
@@ -50131,11 +50903,15 @@ html, body {
   }
 
   .xl\:text-xs {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   .xl\:text-sm {
-    font-size: 0.875rem;
+    font-size: .875rem;
+  }
+
+  .xl\:text-tiny {
+    font-size: .875rem;
   }
 
   .xl\:text-base {
@@ -50168,6 +50944,118 @@ html, body {
 
   .xl\:text-6xl {
     font-size: 4rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .xl\:text-8xl {
+    font-size: 6rem;
+  }
+
+  .xl\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .xl\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .xl\:hover\:text-tiny:hover {
+    font-size: .875rem;
+  }
+
+  .xl\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .xl\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .xl\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .xl\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .xl\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .xl\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .xl\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .xl\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .xl\:hover\:text-7xl:hover {
+    font-size: 5rem;
+  }
+
+  .xl\:hover\:text-8xl:hover {
+    font-size: 6rem;
+  }
+
+  .xl\:focus\:text-xs:focus {
+    font-size: .75rem;
+  }
+
+  .xl\:focus\:text-sm:focus {
+    font-size: .875rem;
+  }
+
+  .xl\:focus\:text-tiny:focus {
+    font-size: .875rem;
+  }
+
+  .xl\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .xl\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .xl\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .xl\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .xl\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .xl\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .xl\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .xl\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
+  .xl\:focus\:text-7xl:focus {
+    font-size: 5rem;
+  }
+
+  .xl\:focus\:text-8xl:focus {
+    font-size: 6rem;
   }
 
   .xl\:italic {
@@ -50240,12 +51128,16 @@ html, body {
     -moz-osx-font-smoothing: auto;
   }
 
+  .xl\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .xl\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .xl\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .xl\:tracking-normal {
@@ -50253,15 +51145,83 @@ html, body {
   }
 
   .xl\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .xl\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .xl\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
+  }
+
+  .xl\:tracking-widestest {
+    letter-spacing: .25em;
+  }
+
+  .xl\:hover\:tracking-tightest:hover {
+    letter-spacing: -.075em;
+  }
+
+  .xl\:hover\:tracking-tighter:hover {
+    letter-spacing: -.05em;
+  }
+
+  .xl\:hover\:tracking-tight:hover {
+    letter-spacing: -.025em;
+  }
+
+  .xl\:hover\:tracking-normal:hover {
+    letter-spacing: 0;
+  }
+
+  .xl\:hover\:tracking-wide:hover {
+    letter-spacing: .025em;
+  }
+
+  .xl\:hover\:tracking-wider:hover {
+    letter-spacing: .05em;
+  }
+
+  .xl\:hover\:tracking-widest:hover {
+    letter-spacing: .1em;
+  }
+
+  .xl\:hover\:tracking-widestest:hover {
+    letter-spacing: .25em;
+  }
+
+  .xl\:focus\:tracking-tightest:focus {
+    letter-spacing: -.075em;
+  }
+
+  .xl\:focus\:tracking-tighter:focus {
+    letter-spacing: -.05em;
+  }
+
+  .xl\:focus\:tracking-tight:focus {
+    letter-spacing: -.025em;
+  }
+
+  .xl\:focus\:tracking-normal:focus {
+    letter-spacing: 0;
+  }
+
+  .xl\:focus\:tracking-wide:focus {
+    letter-spacing: .025em;
+  }
+
+  .xl\:focus\:tracking-wider:focus {
+    letter-spacing: .05em;
+  }
+
+  .xl\:focus\:tracking-widest:focus {
+    letter-spacing: .1em;
+  }
+
+  .xl\:focus\:tracking-widestest:focus {
+    letter-spacing: .25em;
   }
 
   .xl\:select-none {
@@ -50583,3 +51543,4 @@ html, body {
     z-index: auto;
   }
 }
+
