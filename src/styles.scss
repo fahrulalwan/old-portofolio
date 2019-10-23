@@ -170,6 +170,10 @@ button,
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1 {
   font-size: inherit;
   font-weight: inherit;
@@ -224,6 +228,10 @@ canvas {
   }
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -234,10 +242,6 @@ canvas {
 
 .bg-gray-200 {
   background-color: #edf2f7;
-}
-
-.bg-red-300 {
-  background-color: #feb2b2;
 }
 
 .border-green-700 {
@@ -256,12 +260,24 @@ canvas {
   border-bottom-width: 4px;
 }
 
+.hover\:border-b-4:hover {
+  border-bottom-width: 4px;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
 .inline {
   display: inline;
 }
 
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .items-center {
@@ -316,6 +332,10 @@ canvas {
   margin: 0.5rem;
 }
 
+.m-32 {
+  margin: 8rem;
+}
+
 .mx-40 {
   margin-left: 10rem;
   margin-right: 10rem;
@@ -335,6 +355,10 @@ canvas {
   margin-left: 0.5rem;
 }
 
+.-mt-16 {
+  margin-top: -4rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -342,6 +366,11 @@ canvas {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-56 {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 
 .pt-10 {
@@ -358,6 +387,10 @@ canvas {
 
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0;
 }
 
 .text-center {
@@ -400,8 +433,16 @@ canvas {
   font-size: 1.875rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+}
+
 .text-6xl {
   font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
 }
 
 .hover\:text-3xl:hover {
@@ -428,12 +469,20 @@ canvas {
   width: 2rem;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-full {
   width: 100%;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 @font-face {
@@ -451,10 +500,6 @@ canvas {
 @font-face {
   font-family: "Sailec-Medium";
 
-  font-style: normal;
-
-  font-weight: 400;
-
   src: local("Sailec Medium"), local("Sailec-Medium"), url("assets/fonts/sailec/sailec-medium.woff2") format("woff2"), url("assets/fonts/sailec/sailec-medium.woff") format("woff");
 
   
@@ -463,11 +508,15 @@ canvas {
 @font-face {
   font-family: "Sailec-Light";
 
-  font-style: normal;
-
-  font-weight: 400;
-
   src: local("Sailec Light"), local("Sailec-Light"), url("assets/fonts/sailec/sailec-light.woff2") format("woff2"), url("assets/fonts/sailec/sailec-light.woff") format("woff");
+
+  
+}
+
+@font-face {
+  font-family: "Sailec-Bold";
+
+  src: local("Sailec Bold"), local("Sailec-Bold"), url("assets/fonts/sailec/sailec-bold.woff2") format("woff2"), url("assets/fonts/sailec/sailec-bold.woff") format("woff");
 
   
 }

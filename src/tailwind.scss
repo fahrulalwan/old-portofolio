@@ -16,8 +16,6 @@
 
 @font-face {
   font-family: 'Sailec-Medium';
-  font-style: normal;
-  font-weight: 400;
   src: local('Sailec Medium'), local('Sailec-Medium'),
   url('assets/fonts/sailec/sailec-medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('assets/fonts/sailec/sailec-medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -25,11 +23,16 @@
 
 @font-face {
   font-family: 'Sailec-Light';
-  font-style: normal;
-  font-weight: 400;
   src: local('Sailec Light'), local('Sailec-Light'),
   url('assets/fonts/sailec/sailec-light.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('assets/fonts/sailec/sailec-light.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Sailec-Bold';
+  src: local('Sailec Bold'), local('Sailec-Bold'),
+  url('assets/fonts/sailec/sailec-bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/fonts/sailec/sailec-bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html, body {

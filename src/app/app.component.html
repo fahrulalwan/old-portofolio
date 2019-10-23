@@ -1,5 +1,5 @@
-<header class="w-full fixed bg-black">
-  <div class="mx-40 relative flex items-center content-center justify-between h-24">
+<header class="w-full fixed bg-transparent z-10" [ngClass]="scrollState ? 'bg-black' : 'bg-transparent'" *ngIf="scrollState">
+  <div class="w-10/12 mx-auto relative flex items-center content-center justify-between h-24">
     <a class="text-white text-center my-auto hover:tracking-wider track hover:text-3xl text-2xl font-display" routerLink="/">
       @fahrulalwan
     </a>
@@ -10,11 +10,10 @@
 </header>
 
 <div class="flex h-24 justify-center items-center">
-  <h1 class="text-white text-xl items-center z-10 font-display">{{page | async}}.</h1>
+  <h1 class="text-white text-xl items-center z-20 font-display">{{page | async}}.</h1>
 </div>
 
-
-<router-outlet></router-outlet>
+<router-outlet class="absolute"></router-outlet>
 
 <footer class="w-full bg-gray-200">
   <div class="flex mx-40 pt-10">

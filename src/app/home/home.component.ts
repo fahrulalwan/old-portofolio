@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     this.app.page = this.route.data.pipe(map(data => data.route));
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

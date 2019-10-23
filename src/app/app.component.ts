@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { Observable } from 'rxjs';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
@@ -12,7 +12,7 @@ import { faMediumM } from '@fortawesome/free-brands-svg-icons/faMediumM';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    trigger('EnterLeave', [
+    trigger('enterLeave', [
       state('flyIn', style({transform: 'translateX(0)'})),
       transition(':enter', [
         style({transform: 'translateX(-100%)'}),
@@ -32,9 +32,26 @@ export class AppComponent implements OnInit {
   faMedium = faMediumM;
   page: Observable<string>;
 
+  scrollState = true;
+  scrollValue: number;
+
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    // console.table([window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop]);
+    const position = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (position <= 100) {
+      this.scrollState = true;
+    } else if (position >= this.scrollValue) {
+      this.scrollState = false;
+    } else if (position < this.scrollValue) {
+      this.scrollState = true;
+    }
+    this.scrollValue = position;
   }
 }

@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Sailec-Medium', 'Helvetica', 'Arial', 'sans-serif'],
-      body: ['Sailec-Light', 'Helvetica', 'Arial', 'sans-serif']
+      body: ['Sailec-Light', 'Helvetica', 'Arial', 'sans-serif'],
+      highlight: ['Sailec-Bold', 'Helvetica', 'Arial', 'sans-serif']
     },
     letterSpacing: {
       tightest: '-.075em',
@@ -33,7 +34,8 @@ module.exports = {
   },
   variants: {
     letterSpacing: ['default', 'responsive', 'hover', 'focus'],
-    fontSize: ['default', 'responsive', 'hover', 'focus']
+    fontSize: ['default', 'responsive', 'hover', 'focus'],
+    borderWidth: ['default', 'responsive', 'hover', 'focus']
   },
   plugins: []
 };
