@@ -1,43 +1,11 @@
-<header class="w-full fixed bg-transparent z-10" [ngClass]="scrollState ? 'bg-black' : 'bg-transparent'" *ngIf="scrollState">
-  <div class="w-10/12 mx-auto relative flex items-center content-center justify-between h-24">
-    <a class="text-white text-center my-auto hover:tracking-wider track hover:text-3xl text-2xl font-display" routerLink="/">
-      @fahrulalwan
-    </a>
-    <a routerLink="/404-not-found">
-      <fa-icon class="text-white text-center my-auto text-sm" [icon]="faBars" size="2x"></fa-icon>
-    </a>
-  </div>
-</header>
+<app-header></app-header>
 
-<div class="flex h-24 justify-center items-center">
-  <h1 class="text-white text-xl items-center z-20 font-display">{{page | async}}.</h1>
-</div>
+<nav class="flex justify-center">
+  <h1 class="text-white text-xs z-20 font-display select-none absolute top-0 mt-6 pt-1">{{page | async}}.</h1>
+</nav>
 
-<router-outlet class="absolute"></router-outlet>
+<main>
+  <router-outlet class="absolute"></router-outlet>
+</main>
 
-<footer class="w-full bg-gray-200">
-  <div class="flex mx-40 pt-10">
-    <div class="flex-auto font-body text-2xl">Jakarta, Indonesia</div>
-    <div class="flex-auto ">
-      <p class="font-body text-3xl tracking-wider font-bold ml-2">You like?</p>
-      <p class="font-display text-xl tracking-widest ml-2">Contact me.</p>
-      <div class="flex">
-          <a href="https://www.linkedin.com/in/mohammad-fahrul-alwan-50652a125" target="_blank" class="rounded-full border-2 inline w-8 relative m-2 p-5 flex items-center justify-center">
-            <fa-icon class="text-center absolute" [icon]="faLinkedIn"></fa-icon>
-          </a>
-          <a href="https://www.instagram.com/fahrulalwan" target="_blank" class="rounded-full border-2 inline w-8 relative m-2 p-5 flex items-center justify-center">
-            <fa-icon class="text-center absolute" [icon]="faInstagram"></fa-icon>
-          </a>
-          <a routerLink="/contact" class="rounded-full border-2 inline w-8 relative m-2 p-5 flex items-center justify-center">
-            <fa-icon class="text-center absolute" [icon]="faEmail"></fa-icon>
-          </a>
-          <a href="https://medium.com/@fahrulalwan" target="_blank" class="rounded-full border-2 inline w-8 relative m-2 p-5 flex items-center justify-center">
-            <fa-icon class="text-center absolute" [icon]="faMedium"></fa-icon>
-          </a>
-      </div>
-    </div>
-    <div class="flex-auto font-body text-3xl tracking-wide font-bold">Let's talk!</div>
-  </div>
-
-  <div class="text-center text-xs py-5">© 2019</div>
-</footer>
+<app-footer></app-footer>

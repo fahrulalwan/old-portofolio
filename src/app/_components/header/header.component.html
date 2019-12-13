@@ -1,0 +1,16 @@
+<header class="w-full fixed z-10" [ngClass]="scrollState ? 'bg-black' : 'bg-transparent'"
+        *ngIf="scrollState">
+  <div class="w-11/12 mx-auto relative flex items-center content-center justify-between my-5">
+    <a class="text-white text-center my-auto track text-lg font-display"
+       routerLink="/">
+      @fahrulalwan
+    </a>
+    <a routerLink="/hmm-hmm">
+      <div id="nav-icon1" class="cursor-pointer w-10 h-8 relative my-auto self-stretch" [class.open]="isNavOpened" (click)="isNavOpened = !isNavOpened">
+        <span class="block absolute bg-white rounded-lg w-full"></span>
+        <span class="block absolute bg-white rounded-lg w-full"></span>
+        <span class="block absolute bg-white rounded-lg w-full"></span>
+      </div>
+    </a>
+  </div>
+</header>

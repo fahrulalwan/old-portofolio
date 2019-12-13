@@ -13,13 +13,13 @@ const routes: Routes = [
     data: {route: 'Contact'}
   },
   {
-    path: '404-not-found',
+    path: 'hmm-hmm',
     loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundModule),
     data: {route: '404'}
   },
   {
     path: '**',
-    redirectTo: '404-not-found'
+    redirectTo: 'hmm-hmm'
   }
 ];
 
@@ -27,5 +27,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
+export class AppRouting {
 }

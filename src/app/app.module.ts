@@ -1,20 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRouting } from './app.routing';
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './_components/header/header.component';
+import { FooterComponent } from './_components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
+    BrowserAnimationsModule,
+    AppRouting
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

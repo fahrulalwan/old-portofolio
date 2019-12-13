@@ -20,6 +20,7 @@ a {
   background-color: transparent;
 }
 
+b,
 strong {
   font-weight: bolder;
 }
@@ -195,6 +196,7 @@ code {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+svg,
 canvas {
   display: block;
   vertical-align: middle;
@@ -244,8 +246,16 @@ canvas {
   background-color: #edf2f7;
 }
 
+.bg-purple-400 {
+  background-color: #b794f4;
+}
+
 .border-green-700 {
   border-color: #2f855a;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-full {
@@ -260,12 +270,20 @@ canvas {
   border-bottom-width: 4px;
 }
 
-.hover\:border-b-4:hover {
-  border-bottom-width: 4px;
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
 }
 
 .cursor-default {
   cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.block {
+  display: block;
 }
 
 .inline {
@@ -276,12 +294,24 @@ canvas {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .table {
   display: table;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.self-stretch {
+  align-self: stretch;
 }
 
 .justify-center {
@@ -300,6 +330,10 @@ canvas {
   flex: 1 1 auto;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .font-display {
   font-family: Sailec-Medium, Helvetica, Arial, sans-serif;
 }
@@ -316,8 +350,16 @@ canvas {
   font-weight: 900;
 }
 
-.h-24 {
-  height: 6rem;
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-full {
@@ -332,13 +374,19 @@ canvas {
   margin: 0.5rem;
 }
 
-.m-32 {
-  margin: 8rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .my-auto {
@@ -355,12 +403,37 @@ canvas {
   margin-left: 0.5rem;
 }
 
-.-mt-16 {
-  margin-top: -4rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.-mt-24 {
+  margin-top: -6rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-5 {
@@ -368,9 +441,23 @@ canvas {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .py-56 {
   padding-top: 14rem;
   padding-bottom: 14rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-10 {
@@ -417,8 +504,8 @@ canvas {
   font-size: .75rem;
 }
 
-.text-sm {
-  font-size: .875rem;
+.text-lg {
+  font-size: 1.125rem;
 }
 
 .text-xl {
@@ -437,40 +524,60 @@ canvas {
   font-size: 2.25rem;
 }
 
-.text-6xl {
-  font-size: 4rem;
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
-.text-7xl {
-  font-size: 5rem;
-}
-
-.hover\:text-3xl:hover {
-  font-size: 1.875rem;
+.tracking-tight {
+  letter-spacing: -.025em;
 }
 
 .tracking-wide {
   letter-spacing: .025em;
 }
 
-.tracking-wider {
-  letter-spacing: .05em;
-}
-
 .tracking-widest {
   letter-spacing: .1em;
 }
 
-.hover\:tracking-wider:hover {
-  letter-spacing: .05em;
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.w-8 {
-  width: 2rem;
+.align-top {
+  vertical-align: top;
+}
+
+.align-text-top {
+  vertical-align: text-top;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-full {
