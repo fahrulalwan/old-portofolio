@@ -13,7 +13,7 @@ import { FooterComponent } from './_components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRouting
   ],
