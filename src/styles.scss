@@ -11044,6 +11044,24 @@ html, body {
   font-family: "Sailec", "Helvetica", "Arial", sans-serif;
 }
 
+body {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 4rem);
+}
+
+@media (min-width: 768px) {
+  main {
+    min-height: calc(100vh - 17.23rem);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
