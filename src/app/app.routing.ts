@@ -18,6 +18,11 @@ const routes: Routes = [
     data: {route: '404'}
   },
   {
+    path: 'home',
+    redirectTo: '/',
+    pathMatch: 'full'
+  },
+  {
     path: '**',
     redirectTo: 'hmm-hmm'
   }

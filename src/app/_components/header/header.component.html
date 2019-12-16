@@ -1,12 +1,12 @@
-<header class="w-full fixed z-10" [ngClass]="scrollState ? 'bg-black' : 'bg-transparent'"
+<header class="w-full fixed z-10" [ngClass]="scrollState ? 'bg-black' : 'bg-transparent'" [@headerAnimate]="scrollState"
         *ngIf="scrollState">
   <div class="w-11/12 mx-auto relative flex items-center content-center justify-between my-5">
     <a class="text-white text-center my-auto track text-lg font-display"
        routerLink="/">
       @fahrulalwan
     </a>
-    <a routerLink="/hmm-hmm">
-      <div id="nav-icon1" class="cursor-pointer w-10 h-8 relative my-auto self-stretch" [class.open]="isNavOpened" (click)="isNavOpened = !isNavOpened">
+    <a (click)="emitNav()">
+      <div id="nav-icon1" class="cursor-pointer w-10 h-8 relative my-auto self-stretch" [class.open]="isNavOpened">
         <span class="block absolute bg-white rounded-lg w-full"></span>
         <span class="block absolute bg-white rounded-lg w-full"></span>
         <span class="block absolute bg-white rounded-lg w-full"></span>
@@ -14,3 +14,20 @@
     </a>
   </div>
 </header>
+
+<nav *ngIf="isNavOpened" class="fixed inset-y-0 right-0 bg-black tracking-wider text-4xl select-none" [@enterLeaveNav]="isNavOpened">
+  <div class="flex flex-col text-right justify-center text-white font-bold h-full py-10 font-body leading-loose">
+    <div>
+      <a routerLink="/" routerLinkActive="opacity-25" [routerLinkActiveOptions]="{exact: true}" class="cursor-pointer outline-none align-bottom -z-10" (click)="toggleNav()">Home</a>
+    </div>
+    <div>
+      <a routerLink="/work" routerLinkActive="opacity-25" class="cursor-pointer outline-none align-bottom" (click)="toggleNav()">Work</a>
+    </div>
+    <div>
+      <a routerLink="/about" routerLinkActive="opacity-25" class="cursor-pointer outline-none align-bottom" (click)="toggleNav()">About</a>
+    </div>
+    <div>
+      <a routerLink="/contact" routerLinkActive="opacity-25" class="cursor-pointer outline-none align-bottom" (click)="toggleNav()">Contact</a>
+    </div>
+  </div>
+</nav>

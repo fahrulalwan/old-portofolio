@@ -1,11 +1,11 @@
 <app-header></app-header>
 
 <nav class="flex justify-center">
-  <h1 class="text-white text-xs z-20 font-display select-none absolute top-0 mt-6 pt-1">{{page | async}}.</h1>
+  <h1 class="text-white text-xs z-20 font-display select-none absolute top-0 mt-6 pt-1">{{(page | async) ? (page | async) + '.' : ''}}</h1>
 </nav>
 
-<main>
-  <router-outlet class="absolute"></router-outlet>
+<main class="mt-16 pt-2">
+  <router-outlet></router-outlet>
 </main>
 
 <app-footer></app-footer>
